@@ -1,9 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Righteous&display=swap');
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
+img {
+  max-width: 100%;
+}
+
 body {
+  background-color: hsl(0, 0%, 96%);
+  font-family: 'Righteous', cursive;
   min-height: 100vh;
+  padding-block-start: 2rem;
+}
+
+h1 {
+  text-align: center;
+  margin-block-end: 2rem;
+  font-size: clamp(1.5rem, 3.33vw, 3rem);
+  letter-spacing: clamp(2px, 0.417vw, 6px);
+  text-transform: uppercase;
+  line-height: 2;
+}
+
+.highlight {
+  background-color: #2dbcf5;
+  padding-block: 0.425rem;
+  padding-inline: 1rem;
+}
+
+.loader {
+  position: fixed;
+  inset: 0;
+  background-color: hsl(0 0% 96% / 0.5);
+}
+.loader img {
+  position: inherit;
+  z-index: 99;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.img-container {
+  width: 94vw;
+  max-width: 60rem;
+  margin-inline: auto;
+}
+
+.img-container > * + * {
+  margin-top: 1rem;
+}
+.img-container a {
+  display: block;
+}
+
+.img-container img {
+  width: 100%;
 }

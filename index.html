@@ -3,19 +3,35 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Template</title>
+    <title>Unsplash API | Infinite Scroll</title>
     <link rel="icon" type="image/png" href="favicon.png" />
-    <!-- FontAwesome Icons -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
 
     <link rel="stylesheet" href="style.css" />
     <script defer src="script.js"></script>
   </head>
-  <body></body>
+  <body>
+    <!-- Title -->
+    <h1>
+      Unsplash API <br />
+      <span class="highlight">Infinite Scroll</span>
+    </h1>
+    <!-- Loader -->
+    <div class="loader" id="loader">
+      <img src="./spinner.svg" alt="" aria-hidden="true" />
+    </div>
+    <div class="img-container" id="img-container">
+      <img
+        src="https://images.unsplash.com/photo-1680511037243-90060c7fa579?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+        alt=""
+      />
+      <img
+        src="https://images.unsplash.com/photo-1678802250711-c2a46f579cf3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=Mnw0MzI0ODh8MHwxfHJhbmRvbXx8fHx8fHx8fDE2ODA3NjU5Mzc&ixlib=rb-4.0.3&q=80&w=1080"
+        alt=""
+      />
+      <img
+        src="https://images.unsplash.com/photo-1678145219935-fff016f92217?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=Mnw0MzI0ODh8MHwxfHJhbmRvbXx8fHx8fHx8fDE2ODA3NjU5Mzc&ixlib=rb-4.0.3&q=80&w=1080"
+        alt=""
+      />
+    </div>
+  </body>
 </html>
