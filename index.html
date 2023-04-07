@@ -11,27 +11,22 @@
   </head>
   <body>
     <!-- Title -->
-    <h1>
-      Unsplash API <br />
-      <span class="highlight">Infinite Scroll</span>
-    </h1>
-    <!-- Loader -->
-    <div class="loader" id="loader">
-      <img src="./spinner.svg" alt="" aria-hidden="true" />
-    </div>
-    <div class="img-container" id="img-container">
-      <img
-        src="https://images.unsplash.com/photo-1680511037243-90060c7fa579?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
-        alt=""
-      />
-      <img
-        src="https://images.unsplash.com/photo-1678802250711-c2a46f579cf3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=Mnw0MzI0ODh8MHwxfHJhbmRvbXx8fHx8fHx8fDE2ODA3NjU5Mzc&ixlib=rb-4.0.3&q=80&w=1080"
-        alt=""
-      />
-      <img
-        src="https://images.unsplash.com/photo-1678145219935-fff016f92217?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=Mnw0MzI0ODh8MHwxfHJhbmRvbXx8fHx8fHx8fDE2ODA3NjU5Mzc&ixlib=rb-4.0.3&q=80&w=1080"
-        alt=""
-      />
+    <div class="container">
+      <h1>
+        Unsplash API <br />
+        <span class="highlight">Infinite Scroll</span>
+      </h1>
+      <!-- Loader -->
+      <div class="loader" id="loader">
+        <img src="./spinner.svg" alt="" aria-hidden="true" />
+      </div>
+      <div class="img-container" id="img-container">
+        <img class="error-image" src="./404-Illustration.png" alt="" />
+        <div class="error-message">
+          please enable <span class="highlight">JavaScript</span>
+        </div>
+      </div>
+      <div class="back-to-top" id="back-to-top"></div>
     </div>
   </body>
 </html>
