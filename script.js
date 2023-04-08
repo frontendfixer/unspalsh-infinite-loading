@@ -42,7 +42,7 @@ const displayPhotos = function () {
     });
     const img = document.createElement('img');
     setAttributes(img, {
-      src: photo.urls.reguler,
+      src: photo.urls.regular,
       alt: photo.alt_description,
       title: photo.description ? photo.description : photo.alt_description,
     });
